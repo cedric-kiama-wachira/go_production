@@ -5,14 +5,18 @@ import (
 )
 
 func main() {
-	var zero_value_bool bool
-	var zero_value_int int
-	var zero_value_float64 float64
-	var zero_value_string string
+	var first_name_of_the_multi_line string
+	var second_name_of_the_multi_line string
+	var third_name_of_the_multi_line string
+	var are_this_your_full_names bool = true
 
-	fmt.Printf("Default Value for boolean data type is: %v\n", zero_value_bool)
-	fmt.Printf("Default Value for integer data type is: %d\n", zero_value_int)
-	fmt.Printf("Default Value for float data type is: %f\n", zero_value_float64)
-	fmt.Printf("Default Value for string data type is: %s\n", zero_value_string)
-
+	fmt.Println("Enter your first name: ")
+	fmt.Scanf("%s", &first_name_of_the_multi_line)
+	fmt.Println("Enter your second name: ")
+	fmt.Scanf("%s", &second_name_of_the_multi_line)
+	fmt.Println("Enter your third name: ")
+	fmt.Scanf("%s", &third_name_of_the_multi_line)
+	fmt.Println("Confirm with either true or false to see results. ")
+	fmt.Scanf("%t", &are_this_your_full_names)
+	fmt.Println(first_name_of_the_multi_line, second_name_of_the_multi_line, third_name_of_the_multi_line, are_this_your_full_names)
 }
